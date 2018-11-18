@@ -217,8 +217,8 @@
         [emojiArray addObject:emoji];
 }
 
-+ (NSString *)overrideKBTreeEmoji:(NSString *)emojiString overrideNewVariant:(BOOL)overrideNewVariant {
-    if (overrideNewVariant && emojiString && emojiString.length >= 4) {
++ (NSString *)overrideKBTreeEmoji:(NSString *)emojiString {
+    if (emojiString.length >= 4) {
         NSString *skin = [self getSkin:emojiString];
         if (skin) {
             NSString *emojiWithoutSkin = [self changeEmojiSkin:emojiString toSkin:@""];

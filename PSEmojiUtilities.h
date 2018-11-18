@@ -55,7 +55,7 @@
 + (NSString *)emojiBaseString:(NSString *)emojiString;
 + (NSString *)skinToneVariant:(NSString *)emojiString baseFirst:(NSString *)baseFirst base:(NSString *)base skin:(NSString *)skin;
 + (NSString *)skinToneVariant:(NSString *)emojiString skin:(NSString *)skin;
-+ (NSString *)overrideKBTreeEmoji:(NSString *)emojiString overrideNewVariant:(BOOL)overrideNewVariant;
++ (NSString *)overrideKBTreeEmoji:(NSString *)emojiString;
 
 + (UIKeyboardEmojiCollectionViewCell *)collectionView:(UICollectionView *)collectionView_ cellForItemAtIndexPath:(NSIndexPath *)indexPath inputView:(UIKeyboardEmojiCollectionInputView *)inputView;
 + (UIKeyboardEmojiCategory *)prepopulatedCategory;
